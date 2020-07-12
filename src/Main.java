@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        CombinationSum3 fuck = new CombinationSum3();
-        int[] temp = new int[]{5,1,5,2,5,3,5,4};
+        FindPairs fuck = new FindPairs();
+        int[] temp = new int[]{1, 1, 1, 1, 1};
 
         TreeNode root = new TreeNode(2);
         root.left = new TreeNode(1);
@@ -21,7 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.combinationSum3(3,8));
+        System.out.println(fuck.findPairs(temp, 0));
 
 
         long endTime = System.currentTimeMillis();    //获取结束时间

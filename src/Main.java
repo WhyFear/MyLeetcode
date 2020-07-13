@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        FindPairs fuck = new FindPairs();
+        IsIsomorphic fuck = new IsIsomorphic();
         int[] temp = new int[]{1, 1, 1, 1, 1};
 
         TreeNode root = new TreeNode(2);
@@ -21,8 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.findPairs(temp, 0));
-
+        System.out.println(fuck.isIsomorphic("egg","add"));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,5 +20,22 @@ public class SingleNumber {
                 return key;
         }
         return 0;
+    }
+
+    public int[] singleNumber1(int[] nums) {
+        int[] op = new int[2];
+        Map<Integer, Integer> temp = new HashMap<>();
+        for (int num : nums) {
+            if (temp.containsKey(num)) {
+                temp.remove(num);
+            } else
+                temp.put(num, 1);
+        }
+        int index = 0;
+        for (int key : temp.keySet()) {
+            if (temp.get(key) == 1)
+                op[index++] = key;
+        }
+        return op;
     }
 }

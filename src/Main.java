@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        IsLongPressedName fuck = new IsLongPressedName();
-        int[] temp = new int[]{11,13,17,23,29,31,7,5,2,3};
+        RemoveDuplicates fuck = new RemoveDuplicates();
+        int[] temp = new int[]{11, 13, 17, 23, 29, 31, 7, 5, 2, 3};
 //        TreeNode root = new TreeNode(2);
 //        root.left = new TreeNode(1);
 //        root.left.right = new TreeNode(3);
@@ -20,7 +20,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.isLongPressedName("leelee","lleeelee"));
+        System.out.println(fuck.removeDuplicates("iiiixxxxxiiccccczzffffflllllllllfffffllyyyyyuuuuuz", 5));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

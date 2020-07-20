@@ -1,4 +1,4 @@
-/**
+/*
  * https://leetcode-cn.com/explore/interview/card/bytedance/242/string/1012/
  */
 
@@ -9,7 +9,7 @@ import java.util.Set;
 public class LengthOfLongestSubstring {
     public static void main(String[] args) {
         String str = "aabaab!bb";
-        System.out.println(lengthOfLongestSubstring(str));
+        System.out.println(lengthOfLongestSubstring1(str));
     }
 
     /**
@@ -18,16 +18,16 @@ public class LengthOfLongestSubstring {
     public static int lengthOfLongestSubstring1(String s) {
         int maxLength = 0;
         char[] arr = s.toCharArray();
-        for (int i = 0, j = 0; j < s.length(); ) {
-            for (int k = i; k < j; k++) {
-                if (arr[k] == arr[j]) {
-                    i = k + 1;
+        for (int left = 0, right = 0; right < s.length(); ) {
+            for (int k = left; k < right; k++) {
+                if (arr[k] == arr[right]) {
+                    left = k + 1;
                     break;
                 }
             }
-            j++;
-            if (j - i > maxLength) {
-                maxLength = j - i;
+            right++;
+            if (right - left > maxLength) {
+                maxLength = right - left;
             }
         }
         return maxLength;
@@ -48,5 +48,20 @@ public class LengthOfLongestSubstring {
             op = Math.max(op, temp.size());
         }
         return op;
+    }
+
+
+    public static int lengthOfLongestSubstring2(String s) {
+        int res = 0;
+        Set<Character> set = new HashSet<>();
+        for (int l = 0, r = 0; r < s.length(); r++) {
+            char c = s.charAt(r);
+            while (set.contains(c)) {
+                set.remove(s.charAt(l++));
+            }
+            set.add(c);
+            res = Math.max(res, r - l + 1);
+        }
+        return res;
     }
 }

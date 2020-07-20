@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class IsPalindrome {
     public static void main(String[] args) {
         System.out.println(isPalindrome("  "));
@@ -35,6 +37,36 @@ public class IsPalindrome {
             if (temp[i++] != temp[j--]) {
                 return false;
             }
+        }
+        return true;
+    }
+
+    /**
+     * https://leetcode-cn.com/problems/palindrome-linked-list/
+     * chaoxi
+     */
+    public boolean isPalindrome(ListNode head) {
+        if (head == null) return true;
+        if (head.next == null) return true; //单个节点
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        ListNode prev = null;
+        while (slow != null) {
+            ListNode temp = slow.next;
+            slow.next = prev;
+            prev = slow;
+            slow = temp;
+        }
+        while (head != null && prev != null) {
+            if (head.val != prev.val) {
+                return false;
+            }
+            head = head.next;
+            prev = prev.next;
         }
         return true;
     }

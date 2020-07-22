@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        IsPossible fuck = new IsPossible();
+        XOROperation fuck = new XOROperation();
         int[] temp = new int[]{1, 2, 3, 3, 4, 5};
         char[][] board = new char[][]{{'X', 'X', 'X', 'X'}, {'X', 'O', 'O', 'X'}, {'X', 'X', 'O', 'X'}, {'X', 'O', 'X', 'X'}};
 //        TreeNode root = new TreeNode(2);
@@ -21,7 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.isPossible(temp));
+        System.out.println(fuck.xorOperation(10,5));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

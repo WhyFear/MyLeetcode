@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        SortArrayByParity fuck = new SortArrayByParity();
+        IsSubsequence fuck = new IsSubsequence();
         int[] temp = new int[]{1, 2, 3, 4};
-        char[][] board = new char[][]{{'X', 'X', 'X', 'X'}, {'X', 'O', 'O', 'X'}, {'X', 'X', 'O', 'X'}, {'X', 'O', 'X', 'X'}};
+        char[][] board = new char[][]{{'1'}};
 //        TreeNode root = new TreeNode(2);
 //        root.left = new TreeNode(1);
 //        root.left.right = new TreeNode(3);
@@ -21,7 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(Arrays.toString(fuck.sortArrayByParity(temp)));
+        System.out.println(fuck.isSubsequence("axc","ahbgdc"));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

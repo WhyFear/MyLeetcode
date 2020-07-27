@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * https://leetcode-cn.com/problems/house-robber/
  */
@@ -27,5 +29,26 @@ public class Rob {
             op = Math.max(op, dp[i]);
         }
         return op;
+    }
+
+    /**
+     * https://leetcode-cn.com/problems/house-robber-ii/solution/213-da-jia-jie-she-iidong-tai-gui-hua-jie-gou-hua-/
+     * chaoxi
+     */
+    public int robii(int[] nums) {
+        if (nums.length == 0) return 0;
+        if (nums.length == 1) return nums[0];
+        return Math.max(myRob(Arrays.copyOfRange(nums, 0, nums.length - 1)),
+                myRob(Arrays.copyOfRange(nums, 1, nums.length)));
+    }
+
+    private int myRob(int[] nums) {
+        int pre = 0, cur = 0, tmp;
+        for (int num : nums) {
+            tmp = cur;
+            cur = Math.max(pre + num, cur);
+            pre = tmp;
+        }
+        return cur;
     }
 }

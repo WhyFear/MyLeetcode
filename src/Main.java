@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        IsSubsequence fuck = new IsSubsequence();
+        CountNumbersWithUniqueDigits fuck = new CountNumbersWithUniqueDigits();
         int[] temp = new int[]{1, 2, 3, 4};
         char[][] board = new char[][]{{'1'}};
 //        TreeNode root = new TreeNode(2);
@@ -21,7 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.isSubsequence("axc","ahbgdc"));
+        System.out.println(fuck.countNumbersWithUniqueDigits(3));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

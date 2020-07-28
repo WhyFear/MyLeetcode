@@ -1,5 +1,6 @@
 /**
  * https://leetcode-cn.com/problems/decode-ways/
+ * 类似题：TranslateNum。
  */
 public class NumDecodings {
     public int numDecodings(String s) {

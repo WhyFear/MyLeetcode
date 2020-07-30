@@ -4,8 +4,8 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        WiggleMaxLength fuck = new WiggleMaxLength();
-        int[] temp = new int[]{1,17,5,10,13,15,10,5,16,8};
+        NumberOfArithmeticSlices fuck = new NumberOfArithmeticSlices();
+        int[] temp = new int[]{1, 2, 3, 4,5};
         char[][] board = new char[][]{{'1'}};
 //        TreeNode root = new TreeNode(2);
 //        root.left = new TreeNode(1);
@@ -21,7 +21,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.wiggleMaxLength(temp));
+        System.out.println(fuck.numberOfArithmeticSlices(temp));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

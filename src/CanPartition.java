@@ -1,10 +1,9 @@
 import java.util.Arrays;
 
 /**
- *
+ * https://leetcode-cn.com/problems/partition-equal-subset-sum/
  */
 public class CanPartition {
-
     public boolean canPartition(int[] nums) {
         int len = nums.length;
         if (len == 0) {

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * https://leetcode-cn.com/problems/house-robber/
@@ -50,5 +50,32 @@ public class Rob {
             pre = tmp;
         }
         return cur;
+    }
+
+    /**
+     * https://leetcode-cn.com/problems/house-robber-iii/
+     * chaoxi
+     * 其实还是easy dp 但是就是想不到应该用什么方法
+     */
+    Map<TreeNode, Integer> sums;
+
+    public int rob(TreeNode root) {
+        sums = new HashMap<>();
+        return dfs(root);
+    }
+
+    private int dfs(TreeNode root) {
+        if (root == null) return 0;
+        if (sums.containsKey(root)) return sums.get(root);
+        //要偷取当前层
+        int res = 0;
+        if (root.left != null) res += dfs(root.left.left) + dfs(root.left.right);
+        if (root.right != null) res += dfs(root.right.left) + dfs(root.right.right);
+        res += root.val;
+        //不偷取当前层
+        int res2 = dfs(root.left) + dfs(root.right);
+
+        sums.put(root, Math.max(res, res2));
+        return sums.get(root);
     }
 }

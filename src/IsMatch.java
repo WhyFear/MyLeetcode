@@ -7,7 +7,6 @@ public class IsMatch {
     public boolean isMatch(String s, String p) {
         int sLen = s.length();
         int pLen = p.length();
-
         boolean[][] f = new boolean[sLen + 1][pLen + 1]; //默认false
         f[0][0] = true;
         for (int i = 0; i <= sLen; ++i) {

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        AddDigits fuck = new AddDigits();
+        GetRow fuck = new GetRow();
         int[] temp = new int[]{1, 2, 3, 4, 5};
         int[][] temp1 = new int[][]{{1, 2}, {2, 3}};
         char[][] board = new char[][]{{'1'}};
@@ -22,7 +22,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.addDigits(38));
+        System.out.println(fuck.getRow(4));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

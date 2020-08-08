@@ -4,15 +4,15 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        MinDistance fuck = new MinDistance();
+        RecoverTree fuck = new RecoverTree();
         int[] temp = new int[]{1, 2, 3, 4, 5};
         int[][] temp1 = new int[][]{{1, 2}, {2, 3}};
         char[][] board = new char[][]{{'1'}};
-//        TreeNode root = new TreeNode(3);
-//        root.left = new TreeNode(2);
-//        root.left.right = new TreeNode(3);
-////        root.left.right.right = new TreeNode(1);
-////        root.left.left = new TreeNode(1);
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(3);
+        root.left.right = new TreeNode(2);
+//        root.left.right.right = new TreeNode(1);
+//        root.left.left = new TreeNode(1);
 //        root.right = new TreeNode(3);
 //        root.right.right = new TreeNode(1);
 
@@ -22,7 +22,8 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.minDistance("horse","ros"));
+//        System.out.println(fuck.recoverTree(root));
+        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

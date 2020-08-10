@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        RecoverTree fuck = new RecoverTree();
+        CountBinarySubstrings fuck = new CountBinarySubstrings();
         int[] temp = new int[]{1, 2, 3, 4, 5};
         int[][] temp1 = new int[][]{{1, 2}, {2, 3}};
         char[][] board = new char[][]{{'1'}};
@@ -22,7 +22,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-//        System.out.println(fuck.recoverTree(root));
+        System.out.println(fuck.countBinarySubstrings("10101"));
 //        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间

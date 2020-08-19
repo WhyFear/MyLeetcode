@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        LeastInterval fuck = new LeastInterval();
+        CountSubstrings fuck = new CountSubstrings();
         int[] temp = new int[]{1, 2, 3, 4, 5};
         char[] tasks = new char[]{'A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L','M','M','N','N','O','O','P','P','Q','Q','R','R','S','S','T','T','U','U','V','V','W','W','X','X','Y','Y','Z','Z'};
         int[][] temp1 = new int[][]{{1, 0}, {1, 0}, {1, 0}, {1, 1}};
@@ -23,7 +23,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.leastInterval(tasks, 2));
+        System.out.println(fuck.countSubstrings("A"));
 //        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间

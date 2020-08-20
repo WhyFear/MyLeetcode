@@ -4,11 +4,14 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        CountSubstrings fuck = new CountSubstrings();
+        UpdateBoard fuck = new UpdateBoard();
         int[] temp = new int[]{1, 2, 3, 4, 5};
-        char[] tasks = new char[]{'A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L','M','M','N','N','O','O','P','P','Q','Q','R','R','S','S','T','T','U','U','V','V','W','W','X','X','Y','Y','Z','Z'};
+        char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
         int[][] temp1 = new int[][]{{1, 0}, {1, 0}, {1, 0}, {1, 1}};
-        char[][] board = new char[][]{{'1'}};
+        char[][] board = new char[][]{{'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'M', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'}};
 //        TreeNode root = new TreeNode(1);
 //        root.left = new TreeNode(3);
 //        root.left.right = new TreeNode(2);
@@ -23,7 +26,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.countSubstrings("A"));
+        System.out.println(fuck.updateBoard(board, new int[]{3, 0}));
 //        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间

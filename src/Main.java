@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        PredictTheWinner fuck = new PredictTheWinner();
+        GetPermutation fuck = new GetPermutation();
         int[] temp = new int[]{1, 5, 233, 7};
         int[][] temp1 = new int[][]{{1, 3}, {3, 0, 1}, {2}, {0}};
         char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
@@ -27,7 +27,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.PredictTheWinner(temp));
+        System.out.println(fuck.getPermutation(5,99));
 //        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间

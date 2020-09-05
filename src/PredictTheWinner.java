@@ -5,6 +5,7 @@
 public class PredictTheWinner {
     public boolean PredictTheWinner(int[] nums) {
         int length = nums.length;
+        if (length % 2 == 0) return true;
         int[][] dp = new int[length][length];
         for (int i = 0; i < length; i++) {
             dp[i][i] = nums[i];

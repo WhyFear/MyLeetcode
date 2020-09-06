@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode-cn.com/problems/binary-tree-level-order-traversal/

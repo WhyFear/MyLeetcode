@@ -27,8 +27,6 @@ public class SolveNQueens {
                 }
                 res.add(temp);
             }
-            return;
         }
-
     }
 }

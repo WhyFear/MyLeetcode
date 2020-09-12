@@ -9,8 +9,6 @@ public class MaxProfit {
 
     /**
      * 我自己写的，n方时间复杂度。
-     * @param prices
-     * @return
      */
     public static int myMaxProfit(int[] prices) {
         int op = 0;
@@ -36,5 +34,22 @@ public class MaxProfit {
             min = Math.min(min, prices[i]);
         }
         return max;
+    }
+
+    /**
+     * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
+     * 714.买卖股票的最佳时机含手续费
+     * 买入卖出需要手续费，卖出后买入不需要手续费！！！
+     */
+    public int maxProfit(int[] prices, int fee) {
+        int len = prices.length;
+        if (len < 2) return 0;
+        int[][] dp = new int[len][2]; // 0是未持有股票，1是持有股票
+        dp[0][1] = -prices[0]; // 初始就持有，那么我的利润就是负的。
+        for (int i = 1; i < len; i++) {
+            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i] - fee);
+            dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]);
+        }
+        return dp[len - 1][0];
     }
 }

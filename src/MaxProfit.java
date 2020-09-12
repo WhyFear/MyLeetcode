@@ -47,8 +47,8 @@ public class MaxProfit {
         int[][] dp = new int[len][2]; // 0是未持有股票，1是持有股票
         dp[0][1] = -prices[0]; // 初始就持有，那么我的利润就是负的。
         for (int i = 1; i < len; i++) {
-            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i] - fee);
-            dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]);
+            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i] - fee); //要嘛继续持有，要嘛将昨天的股票卖出
+            dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] - prices[i]); //要嘛继续持有，要嘛买入新的股票。
         }
         return dp[len - 1][0];
     }

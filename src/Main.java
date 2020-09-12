@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        FindContinuousSequence fuck = new FindContinuousSequence();
-        int[] temp = new int[]{1, 3, 2, 8, 4, 9};
-        int[][] temp1 = new int[][]{{1,1,3},{3,2,2},{1,1,4}};
+        NumSubarrayProductLessThanK fuck = new NumSubarrayProductLessThanK();
+        int[] temp = new int[]{10, 5, 2, 6};
+        int[][] temp1 = new int[][]{{1, 1, 3}, {3, 2, 2}, {1, 1, 4}};
         char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
         char[][] board = new char[][]{{'E', 'E', 'E', 'E', 'E'},
                 {'E', 'E', 'M', 'E', 'E'},
@@ -27,7 +27,7 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        System.out.println(fuck.findContinuousSequence(15));
+        System.out.println(fuck.numSubarrayProductLessThanK(temp, 100));
 //        fuck.recoverTree(root);
 
         long endTime = System.currentTimeMillis();    //获取结束时间

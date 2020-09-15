@@ -22,4 +22,15 @@ public class IsValid {
         }
         return temp.isEmpty();
     }
+
+    /**
+     * https://leetcode-cn.com/problems/check-if-word-is-valid-after-substitutions/
+     */
+    public boolean isValid1(String s) {
+        if (s.length() < 3) return false;
+        while (!s.equals("") && s.contains("abc")) {
+            s = s.replace("abc", "");
+        }
+        return s.equals("");
+    }
 }

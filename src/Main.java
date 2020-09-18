@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        int[] temp = new int[]{0,4,0,0};
+        int[] temp = new int[]{0,1,0};
         int[][] temp1 = new int[][]{{1, 2}, {3, 4}, {1, 4}, {2, 3}};
         char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
         char[][] board = new char[][]{{'5', '3', '.', '.', '7', '.', '.', '.', '.'}, {'6', '.', '.', '1', '9', '5', '.', '.', '.'}, {'.', '9', '8', '.', '.', '.', '.', '6', '.'}, {'8', '.', '.', '.', '6', '.', '.', '.', '3'}, {'4', '.', '.', '8', '.', '3', '.', '.', '1'}, {'7', '.', '.', '.', '2', '.', '.', '.', '6'}, {'.', '6', '.', '.', '.', '.', '2', '8', '.'}, {'.', '.', '.', '4', '1', '9', '.', '.', '5'}, {'.', '.', '.', '.', '8', '.', '.', '7', '9'}};
@@ -24,9 +24,9 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        RightSideView fuck = new RightSideView();
+        LongestMountain fuck = new LongestMountain();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.rightSideView(root));
+        System.out.println(fuck.longestMountain(temp));
 //        fuck.recoverTree(root);
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

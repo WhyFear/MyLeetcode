@@ -24,9 +24,9 @@ public class Main {
 //            p.next = new ListNode(num);
 //            p = p.next;
 //        }
-        LongestMountain fuck = new LongestMountain();
+        PermutationII fuck = new PermutationII();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.longestMountain(temp));
+        System.out.println(Arrays.toString(fuck.permutation("aab")));
 //        fuck.recoverTree(root);
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

@@ -7,13 +7,13 @@ import java.util.List;
  * chaoxi
  */
 public class Permutation {
-    private boolean[] used;
     /**
      如果字符串有重复字母，最简单的去重是使用Set，也可以排序后下标剪枝（相对比较难）
      重复字母的全排列可去做《全排列》系列题目。这道题好像和全排列I差不多。
      接着要做的就是回溯模板啦，选了的跳过，每次选或不选即可爆搜到所有解。
      */
     private List<String> res;
+    private boolean[] used;
     private int len;
 
     public String[] permutation(String S) {

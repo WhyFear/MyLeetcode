@@ -25,9 +25,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        FindUnsortedSubarray fuck = new FindUnsortedSubarray();
+        MinimumOperations fuck = new MinimumOperations();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.findUnsortedSubarray(temp));
+        System.out.println(fuck.minimumOperations("yry"));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

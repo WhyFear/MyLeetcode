@@ -1,7 +1,7 @@
 /**
  * https://leetcode-cn.com/problems/UlBDOe/
  * chaoxi
- */
+ */ 
 public class MinimumOperations {
     public int minimumOperations(String leaves) {
         int n = leaves.length();

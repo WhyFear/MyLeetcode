@@ -26,9 +26,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        PrintKMoves fuck = new PrintKMoves();
+        NumberOfSubstrings fuck = new NumberOfSubstrings();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.printKMoves(5));
+        System.out.println(fuck.numberOfSubstrings("aaacb"));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

@@ -26,9 +26,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        CommonChars fuck = new CommonChars();
+        PrintKMoves fuck = new PrintKMoves();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.commonChars(A));
+        System.out.println(fuck.printKMoves(5));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

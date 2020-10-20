@@ -26,9 +26,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        NumberOfSubstrings fuck = new NumberOfSubstrings();
+        ArrangeCoins fuck = new ArrangeCoins();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.numberOfSubstrings("aaacb"));
+        System.out.println(fuck.arrangeCoins(2147483647));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

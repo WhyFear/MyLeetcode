@@ -26,9 +26,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        ArrangeCoins fuck = new ArrangeCoins();
+        PartitionLabels fuck = new PartitionLabels();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.arrangeCoins(2147483647));
+        System.out.println(fuck.partitionLabels("ababcbacadefegdehijhklij"));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

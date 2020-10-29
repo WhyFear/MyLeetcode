@@ -26,9 +26,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        GcdOfStrings fuck = new GcdOfStrings();
+        NumSub fuck = new NumSub();
 //        fuck.solveSudoku(board);
-        System.out.println(fuck.gcdOfStrings("abcabc", "abc"));
+        Scanner in = new Scanner(System.in);
+        System.out.println(fuck.numSub(in.nextLine()));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

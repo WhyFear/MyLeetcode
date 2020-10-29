@@ -26,9 +26,9 @@ public class Main {
 //            p = p.next;
 //        }
 
-        SmallerNumbersThanCurrent fuck = new SmallerNumbersThanCurrent();
+        GcdOfStrings fuck = new GcdOfStrings();
 //        fuck.solveSudoku(board);
-        System.out.println(Arrays.toString(fuck.smallerNumbersThanCurrent(temp)));
+        System.out.println(fuck.gcdOfStrings("abcabc", "abc"));
 //        System.out.println(Arrays.toString(fuck.permutation("aab")));
 
         long endTime = System.currentTimeMillis();    //获取结束时间

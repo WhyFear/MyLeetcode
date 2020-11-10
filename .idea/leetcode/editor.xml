@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../../Temp/leetcode/editor/cn/[196]删除重复的电子邮箱.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../Temp/leetcode/editor/cn/[196]删除重复的电子邮箱.java" />
+              <option name="questionId" value="196" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Temp/leetcode/editor/cn/[剑指 Offer 67]把字符串转换成整数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/../../Temp/leetcode/editor/cn/[剑指 Offer 67]把字符串转换成整数.java" />
+              <option name="questionId" value="100340" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

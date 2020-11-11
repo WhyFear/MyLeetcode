@@ -11,7 +11,7 @@ public class FindRotateSteps {
         int n = ring.length(), m = key.length();
         List<Integer>[] pos = new List[26];
         for (int i = 0; i < 26; ++i) {
-            pos[i] = new ArrayList<Integer>();
+            pos[i] = new ArrayList<>();
         }
         for (int i = 0; i < n; ++i) {
             pos[ring.charAt(i) - 'a'].add(i);

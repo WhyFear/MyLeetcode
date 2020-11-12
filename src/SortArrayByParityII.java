@@ -3,6 +3,7 @@ import java.util.Deque;
 
 /**
  * https://leetcode-cn.com/problems/sort-array-by-parity-ii/
+ * 瞎鸡儿写，能过就行。
  */
 public class SortArrayByParityII {
     public int[] sortArrayByParityII(int[] A) {

@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        int[] temp = new int[]{-2, -3, -1};
+        int[] temp = new int[]{1, 2, 3, 4, 5};
 
         int[][] temp1 = new int[][]{{3, 3}, {5, -1}, {-2, 4}};
         char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
@@ -20,17 +20,17 @@ public class Main {
 //        root.right = new TreeNode(4);
 //        root.right.right = new TreeNode(1);
 
-//        ListNode head = new ListNode(0);
-//        ListNode p = head;
-//        for (int num : temp) {
-//            p.next = new ListNode(num);
-//            p = p.next;
-//        }
+        ListNode head = new ListNode(0);
+        ListNode p = head;
+        for (int num : temp) {
+            p.next = new ListNode(num);
+            p = p.next;
+        }
 
-        MaximumProduct fuck = new MaximumProduct();
+        OddEvenList fuck = new OddEvenList();
 //        fuck.solveSudoku(board);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.maximumProduct(temp));
+        System.out.println(fuck.oddEvenList(head.next));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

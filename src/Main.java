@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        LargestPerimeter fuck = new LargestPerimeter();
+        ReorganizeString fuck = new ReorganizeString();
 //        fuck.solveSudoku(board);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.largestPerimeter(temp));
+        System.out.println(fuck.reorganizeString("vvvlo"));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

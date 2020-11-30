@@ -1,5 +1,6 @@
 /**
  * https://leetcode-cn.com/problems/reorganize-string/
+ * 像是操作系统执行任务那一题，但是不同是出现次数多的字符要分割开放置。
  * chaoxi
  */
 public class ReorganizeString {

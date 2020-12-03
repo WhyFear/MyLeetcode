@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        SearchRange fuck = new SearchRange();
+        CountPrimes fuck = new CountPrimes();
 //        fuck.solveSudoku(board);
         Scanner in = new Scanner(System.in);
-        System.out.println(Arrays.toString(fuck.searchRange(temp, 1)));
+        System.out.println(fuck.countPrimes(2));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

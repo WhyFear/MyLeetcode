@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
 
-        int[] temp = new int[]{1};
+        int[] temp = new int[]{5,5,10,10,20};
 
         int[][] temp1 = new int[][]{{3, 3}, {5, -1}, {-2, 4}};
         char[] tasks = new char[]{'A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E', 'F', 'F', 'G', 'G', 'H', 'H', 'I', 'I', 'J', 'J', 'K', 'K', 'L', 'L', 'M', 'M', 'N', 'N', 'O', 'O', 'P', 'P', 'Q', 'Q', 'R', 'R', 'S', 'S', 'T', 'T', 'U', 'U', 'V', 'V', 'W', 'W', 'X', 'X', 'Y', 'Y', 'Z', 'Z'};
@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        CountPrimes fuck = new CountPrimes();
+        LemonadeChange fuck = new LemonadeChange();
 //        fuck.solveSudoku(board);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.countPrimes(2));
+        System.out.println(fuck.lemonadeChange(temp));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

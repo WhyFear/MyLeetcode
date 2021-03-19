@@ -2,33 +2,36 @@ import java.util.*;
 
 
 public class Solution {
-    int res = 0;
-
-    /**
-     * 返回亲7数个数
-     *
-     * @param digit int整型一维数组 组成亲7数的数字数组
-     * @return int整型
-     */
-    public int reletive_7(int[] digit) {
-        // write code here
-        dfs(digit, new HashSet<>(), "");
-        return res;
-    }
-
-    private void dfs(int[] digit, Set<Integer> visited, String sb) {
-        if (sb.length() == digit.length) {
-            //可能超位数
-            long result = Long.parseLong(sb.toString());
-            if (result % 7 == 0) res++;
-            return;
-        }
-        for (int i = 0; i < digit.length; i++) {
-            if (!visited.contains(i)) {
-                visited.add(i);
-                dfs(digit, visited, sb + digit[i]);
-                visited.remove(i);
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String input = in.nextLine();
+        int bracket_count = 0;
+        List<List<Integer>> pos = new ArrayList<>();
+        Deque<Integer> stack = new ArrayDeque<>();
+        Deque<Integer> level = new ArrayDeque<>();
+        for (int i = 0; i < input.length(); i++) {
+            if (input.charAt(i) == '(') {
+                level.push(stack.size());
+                stack.push(i);
+            } else if (input.charAt(i) == ')') {
+                int level1 = level.pop();
+                if (level1 >= pos.size()) {
+                    List<Integer> tmp = new ArrayList<>();
+                    tmp.add(stack.pop());
+                    tmp.add(i);
+                    pos.add(tmp);
+                }else {
+                    pos.get(level1).add(stack.pop());
+                    pos.get(level1).add(i);
+                }
+                bracket_count++;
             }
+        }
+        System.out.println(bracket_count);
+        for (List<Integer> temp : pos) {
+            for (int num : temp)
+                System.out.println(num);
         }
     }
 }
+

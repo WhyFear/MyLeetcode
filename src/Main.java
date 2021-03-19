@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        LemonadeChange fuck = new LemonadeChange();
+        Solution fuck = new Solution();
 //        fuck.solveSudoku(board);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.lemonadeChange(temp));
+//        System.out.println(fuck.isValid("([)]"));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

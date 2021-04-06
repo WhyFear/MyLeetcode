@@ -25,6 +25,19 @@ public class RemoveDuplicates {
     }
 
     /**
+     * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/
+     * 1 1 1 2 3
+     * chaoxi
+     */
+    public int removeDuplicatesII(int[] nums) {
+        int i = 0;
+        for (int n : nums)
+            if (i < 2 || n > nums[i - 2])
+                nums[i++] = n;
+        return i;
+    }
+
+    /**
      * https://leetcode-cn.com/problems/remove-all-adjacent-duplicates-in-string/
      * chaoxi
      */

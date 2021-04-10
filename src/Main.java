@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        FindMin fuck = new FindMin();
+        IsUgly fuck = new IsUgly();
 //        fuck.find132pattern(temp);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.findMinII(temp));
+        System.out.println(fuck.isUgly(1000));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

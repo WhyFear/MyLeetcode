@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        IsUgly fuck = new IsUgly();
+        IsScramble fuck = new IsScramble();
 //        fuck.find132pattern(temp);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.isUgly(1000));
+        System.out.println(fuck.isScramble("abc","bac"));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

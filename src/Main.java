@@ -27,10 +27,10 @@ public class Main {
 //            p = p.next;
 //        }
 
-        ContainsNearbyAlmostDuplicate fuck = new ContainsNearbyAlmostDuplicate();
+        JudgeSquareSum fuck = new JudgeSquareSum();
 //        fuck.find132pattern(temp);
         Scanner in = new Scanner(System.in);
-        System.out.println(fuck.containsNearbyAlmostDuplicate(temp,2,3));
+        System.out.println(fuck.judgeSquareSum(5));
 
         long endTime = System.currentTimeMillis();    //获取结束时间
         System.out.println("程序运行时间：" + (endTime - startTime) + "ms");

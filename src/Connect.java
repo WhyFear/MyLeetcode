@@ -48,16 +48,23 @@ public class Connect {
 
 // Definition for a Node.
 class Node {
-    public int val;
-    public Node left;
-    public Node right;
-    public Node next;
+    int val;
+    Node left;
+    Node right;
+    Node next;
+    Node random;
 
     public Node() {
     }
 
     public Node(int _val) {
-        val = _val;
+        this.val = _val;
+    }
+
+    public Node(int _val, Node next, Node random) {
+        this.val = _val;
+        this.next = null;
+        this.random = null;
     }
 
     public Node(int _val, Node _left, Node _right, Node _next) {
